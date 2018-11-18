@@ -24,11 +24,7 @@ end
 
 
 def list(my_songs)
-  i = 1
-   my_songs.each_key do |song|
-    puts "#{i}. #{song}"
-    i += 1
-  end
+  
 end
 
 
@@ -48,16 +44,5 @@ def exit_jukebox
 end
 
 def play(my_songs)
-  list(songs)
-  puts
-  puts "What song do you want to play. Enter song name or number"
-  song_pick = gets.chomp.downcase
-  # songs.each_with_index do |song,index|
-    if songs.include?(song_pick)
-      puts "Now playing song #{song_pick}"
-    elsif songs[song_pick.to_i - 1]
-      puts "Now playing #{songs[song_pick.to_i - 1]}"
-    else
-      puts "Invalid input. Please try again!"
-    end
+
 end
